@@ -1,0 +1,32 @@
+{
+  "name": "ticketbot",
+  "version": "1.0.0",
+  "description": "🎫 TicketBot - Automated ticket availability monitoring system. Tracks event tickets and alerts when they become available. Transform your GitHub Actions workflow into a powerful web application for monitoring sold-out events.",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ticketbot",
+    "ticket-monitoring",
+    "event-tickets",
+    "automation",
+    "web-scraping"
+  ],
+  "author": "TicketBot Team",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.10.0",
+    "compression": "^1.8.0",
+    "dotenv": "^17.1.0",
+    "express": "^5.1.0",
+    "node-cron": "^4.2.0",
+    "nodemailer": "^7.0.5",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}
