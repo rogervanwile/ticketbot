@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎫 TicketBot - Advanced Dashboard</title>
+    <link rel="stylesheet" href="/css/dashboard.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎫 TicketBot</h1>
+            <p class="subtitle">Advanced Ticket Monitoring Dashboard</p>
+        </header>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <div class="stat-icon">🎫</div>
+                <div class="stat-value" id="total-events">0</div>
+                <div class="stat-label">Monitored Events</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">✅</div>
+                <div class="stat-value" id="available-tickets">0</div>
+                <div class="stat-label">Available Tickets</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">📧</div>
+                <div class="stat-value" id="emails-sent">0</div>
+                <div class="stat-label">Emails Sent</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">⏱️</div>
+                <div class="stat-value" id="uptime">0</div>
+                <div class="stat-label">Uptime</div>
+            </div>
+        </div>
+
+        <div class="events-section">
+            <h2>Monitored Events</h2>
+            <div id="events-list" class="events-list">
+                <div class="loading">Loading events...</div>
+            </div>
+        </div>
+
+        <div class="api-section">
+            <h2>API Endpoints</h2>
+            <div class="api-grid">
+                <a href="/api/health" class="api-card">
+                    <div class="api-method">GET</div>
+                    <div class="api-path">/api/health</div>
+                    <div class="api-desc">Health Check</div>
+                </a>
+                <a href="/api/status" class="api-card">
+                    <div class="api-method">GET</div>
+                    <div class="api-path">/api/status</div>
+                    <div class="api-desc">System Status</div>
+                </a>
+                <a href="/api/events" class="api-card">
+                    <div class="api-method">GET</div>
+                    <div class="api-path">/api/events</div>
+                    <div class="api-desc">Monitored Events</div>
+                </a>
+                <a href="/api/stats" class="api-card">
+                    <div class="api-method">GET</div>
+                    <div class="api-path">/api/stats</div>
+                    <div class="api-desc">Statistics</div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/dashboard.js"></script>
+</body>
+</html>
